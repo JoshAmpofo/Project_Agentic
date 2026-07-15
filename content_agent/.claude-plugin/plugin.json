@@ -1,0 +1,13 @@
+{
+  "name": "content-agent",
+  "description": "Generate planned, platform-formatted social content (LinkedIn, X, Facebook) for a niche, plan a week of posts, or draft a Medium article. Plans before generating via a planning subagent; no external API/LLM calls — Claude is the engine.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Josh Ampofo"
+  },
+  "homepage": "https://github.com/JoshAmpofo/Project_Agentic",
+  "repository": {
+    "url": "https://github.com/JoshAmpofo/Project_Agentic"
+  },
+  "license": "MIT"
+}

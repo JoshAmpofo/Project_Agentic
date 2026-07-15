@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Exception: ship the claude.ai-uploadable skill zip (see scripts/build-skill-zip.sh)
+!dist/
+dist/*
+!dist/content-agent-skill.zip
+
+# Local session/tooling artifacts
+.vibe-learn/
+.remember/
