@@ -221,3 +221,7 @@ __marimo__/
 !dist/
 dist/*
 !dist/content-agent-skill.zip
+
+# Local session/tooling artifacts
+.vibe-learn/
+.remember/

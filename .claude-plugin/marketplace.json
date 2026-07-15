@@ -1,0 +1,17 @@
+{
+  "name": "project-agentic",
+  "owner": {
+    "name": "Josh Ampofo"
+  },
+  "plugins": [
+    {
+      "name": "content-agent",
+      "source": {
+        "source": "github",
+        "repo": "JoshAmpofo/Project_Agentic",
+        "path": "content_agent"
+      },
+      "description": "Generate planned, platform-formatted social content (LinkedIn, X, Facebook) for a niche, plan a week of posts, or draft a Medium article. Claude is the engine — no external API calls."
+    }
+  ]
+}
