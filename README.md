@@ -131,7 +131,3 @@ Project_Agentic/
 │   └── README.md                 # plugin-level docs
 └── README.md                     # this file
 ```
-
-## License
-
-MIT
