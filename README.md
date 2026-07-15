@@ -8,7 +8,7 @@ A marketplace of Claude Code agents/plugins I build. Right now it ships one plug
 
 ---
 
-## Install (for teammates)
+## Install
 
 You need [Claude Code](https://claude.com/claude-code). Everything below is run from **inside** a Claude Code session.
 
@@ -49,11 +49,6 @@ When a new version is pushed:
   **Settings → Capabilities → Skills**.
 - **Free accounts (or any plan without skill uploads):** use the copy-paste block in the
   install guide — a self-contained, slightly degraded version that needs no upload.
-
-> **Publishing note:** there's nothing special to do to "list" this on a Claude Code
-> marketplace. A public GitHub repo containing `.claude-plugin/marketplace.json` *is* a
-> marketplace — users just `/plugin marketplace add JoshAmpofo/Project_Agentic`. No central
-> registry, no submission, no approval.
 
 ---
 
