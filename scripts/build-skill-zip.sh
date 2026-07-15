@@ -23,8 +23,13 @@ cp "$SRC/SKILL.md" "$STAGE/content-agent/"
 cp -R "$SRC/references" "$STAGE/content-agent/"
 cp -R "$SRC/data" "$STAGE/content-agent/"
 
+# Reproducible build: normalize mtimes to a fixed epoch and strip extra file
+# attributes (-X) so an unchanged skill always produces a byte-identical zip.
+# Without this, zip embeds current timestamps and every rebuild dirties git.
+find "$STAGE" -exec touch -t 200001010000.00 {} +
+
 rm -f "$ZIP"
-( cd "$STAGE" && zip -r -q "$ZIP" content-agent )
+( cd "$STAGE" && find content-agent -print | sort | zip -X -q "$ZIP" -@ )
 
 echo "built $ZIP"
 ( cd "$STAGE" && zip -sf "$ZIP" >/dev/null 2>&1 ) || true
